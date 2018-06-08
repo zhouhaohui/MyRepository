@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">会报错 -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+  <h2>用户列表</h2>
+  <div>
+     <ul>
+         <li th:each="user:${users}">
+              <span th:text="${user.id}"></span>
+             <span th:text="${user.name}"></span>
+             <span th:text="${user.age}"></span>
+             <span th:text="${user.address}"></span>
+         </li>
+     </ul>
+   </div>
+</body>
+</html>
